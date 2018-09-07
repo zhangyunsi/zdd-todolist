@@ -1,29 +1,145 @@
-
-.normal {
-  font-family: Georgia, sans-serif;
-  margin-top: 3em;
+.section {
+  padding: 15px 8px 8px;
+  background: #fff;
+}
+.section + .section {
+  margin-top: 5px;
+}
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+.footer button {
+  width: 100%;
+  height: 100%;
+  background: red;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+.address {
+  color: #aaa;
+  font-size: 14px;
+}
+.sectionfooter {
+  border-top: 1px solid #ccc;
+  margin-top: 8px;
+  padding: 10px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.setdefault {
+  vertical-align: middle;
+}
+.verticalline {
+  border-left: 1px solid #ccc;
+  margin: 0 15px;
+}
+.addItemModel {
+  transition: all .3s;
+  background: #fff;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+.title {
+  text-align: center;
+  position: relative;
+  height: 40px;
+  padding-top: 10px;
+}
+.title .close {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  font-size: 24px;
+}
+.savebtnwrap {
+  padding: 10px 10px 5px;
+}
+.btndel {
+  background: #ccc;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 5px;
+}
+.btnsave {
+  background: #00CCCC;
+  color: #fff;
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  outline: none;
+}
+.formwrap {
+  padding: 10px;
+}
+.formitemwrap {
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+}
+.formitemwrap input {
+  outline: none;
+  width: 300px;
+}
+.formitemwrap span {
+  display: inline-block;
+  width: 70px;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .2;
+  background: #000;
+  z-index: 3;
+}
+.confirm {
+  background: #fff;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 4;
+  top: 50%;
+  left: 50%;
+  width: 260px;
+  height: 110px;
+  margin-left: -150px;
+  margin-top: -75px;
+  padding: 20px;
   text-align: center;
 }
-
-.title {
-  font-size: 2.5rem;
-  font-weight: normal;
-  letter-spacing: -1px;
+.confirmtext {
+  padding: 15px;
 }
-
-.welcome {
-  height: 328px;
-  background: url(../assets/yay.jpg) no-repeat center 0;
-  background-size: 388px 328px;
+.confirmbuttonwrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
 }
-
-.list {
-  font-size: 1.2em;
-  margin-top: 1.8em;
-  list-style: none;
-  line-height: 1.5em;
+.confirmbuttonwrap button {
+  background: #ccc;
+  border: none;
+  width: 100px;
+  border-radius: 4px;
+  height: 40px;
+  outline: none;
+  color: #fff;
 }
-
-.list code {
-  background: #f7f7f7;
+.confirmbuttonwrap button.btnconfirm {
+  background: #00CCCC;
 }
