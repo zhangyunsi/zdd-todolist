@@ -118,7 +118,8 @@ class IndexPage extends React.Component {
       })
       .then(() => {
         this.setState({
-          confirmDel: false
+          confirmDel: false,
+          isShowModel: false
         });
       });
   };
